@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		E3E2EAC12708CA9A00B9E558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E2EAC02708CA9A00B9E558 /* AppDelegate.swift */; };
 		E3E2EAC32708CA9A00B9E558 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E2EAC22708CA9A00B9E558 /* SceneDelegate.swift */; };
-		E3E2EAC52708CA9A00B9E558 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E2EAC42708CA9A00B9E558 /* ViewController.swift */; };
 		E3E2EAC82708CA9A00B9E558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E2EAC62708CA9A00B9E558 /* Main.storyboard */; };
 		E3E2EACA2708CAA100B9E558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3E2EAC92708CAA100B9E558 /* Assets.xcassets */; };
 		E3E2EACD2708CAA100B9E558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E2EACB2708CAA100B9E558 /* LaunchScreen.storyboard */; };
+		E3E2EAD52708CD2C00B9E558 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E2EAD42708CD2C00B9E558 /* TableViewController.swift */; };
+		E3E2EAD92708CE0900B9E558 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E2EAD82708CE0900B9E558 /* NoteViewController.swift */; };
+		E3E2EADB2708EB7C00B9E558 /* NotesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E2EADA2708EB7C00B9E558 /* NotesManager.swift */; };
+		E3E2EADE2708ED4A00B9E558 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E2EADD2708ED4A00B9E558 /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E3E2EABD2708CA9A00B9E558 /* Apanotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apanotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E2EAC02708CA9A00B9E558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3E2EAC22708CA9A00B9E558 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E3E2EAC42708CA9A00B9E558 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E3E2EAC72708CA9A00B9E558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3E2EAC92708CAA100B9E558 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3E2EACC2708CAA100B9E558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3E2EACE2708CAA100B9E558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3E2EAD42708CD2C00B9E558 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E3E2EAD82708CE0900B9E558 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		E3E2EADA2708EB7C00B9E558 /* NotesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesManager.swift; sourceTree = "<group>"; };
+		E3E2EADD2708ED4A00B9E558 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,40 @@
 			children = (
 				E3E2EAC02708CA9A00B9E558 /* AppDelegate.swift */,
 				E3E2EAC22708CA9A00B9E558 /* SceneDelegate.swift */,
-				E3E2EAC42708CA9A00B9E558 /* ViewController.swift */,
-				E3E2EAC62708CA9A00B9E558 /* Main.storyboard */,
+				E3E2EADC2708EB8500B9E558 /* Models */,
+				E3E2EAD72708CD5300B9E558 /* Views */,
+				E3E2EAD62708CD3B00B9E558 /* Controllers */,
 				E3E2EAC92708CAA100B9E558 /* Assets.xcassets */,
 				E3E2EACB2708CAA100B9E558 /* LaunchScreen.storyboard */,
 				E3E2EACE2708CAA100B9E558 /* Info.plist */,
 			);
 			path = Apanotes;
+			sourceTree = "<group>";
+		};
+		E3E2EAD62708CD3B00B9E558 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E3E2EAD42708CD2C00B9E558 /* TableViewController.swift */,
+				E3E2EAD82708CE0900B9E558 /* NoteViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E3E2EAD72708CD5300B9E558 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E3E2EAC62708CA9A00B9E558 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E3E2EADC2708EB8500B9E558 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E3E2EADA2708EB7C00B9E558 /* NotesManager.swift */,
+				E3E2EADD2708ED4A00B9E558 /* Note.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3E2EAC52708CA9A00B9E558 /* ViewController.swift in Sources */,
+				E3E2EAD92708CE0900B9E558 /* NoteViewController.swift in Sources */,
+				E3E2EADB2708EB7C00B9E558 /* NotesManager.swift in Sources */,
 				E3E2EAC12708CA9A00B9E558 /* AppDelegate.swift in Sources */,
+				E3E2EAD52708CD2C00B9E558 /* TableViewController.swift in Sources */,
 				E3E2EAC32708CA9A00B9E558 /* SceneDelegate.swift in Sources */,
+				E3E2EADE2708ED4A00B9E558 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +331,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.krasmikes.Apanotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +349,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.krasmikes.Apanotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
